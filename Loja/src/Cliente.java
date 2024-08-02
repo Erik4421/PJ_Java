@@ -1,7 +1,8 @@
 public class Cliente extends Usuario{
-    Loja loja;
-    
-    Cliente(String nome, int cpf, double saldo) {
-        super(nome, cpf, saldo);
+    ArmazemLoja armazemLoja;
+    Loja loja = new Loja(armazemLoja);
+
+    void comprar() {
+        
     }
 }

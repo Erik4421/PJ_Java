@@ -1,11 +1,12 @@
 public class Usuario {
     private String nome;
     private int cpf;
-    private double saldo;
     
-    Usuario(String nome, int cpf, double saldo) {
+
+    public void setNome(String nome) {
         this.nome = nome;
-        this.cpf = cpf;
-        this.saldo = saldo;
+    }
+    public String getNome() {
+        return nome;
     }
 }

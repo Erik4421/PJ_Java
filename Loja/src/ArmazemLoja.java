@@ -17,5 +17,9 @@ public class ArmazemLoja {
     public List<List<Object>> getProdutos() {
         return produtos;
     }
+
+    public void mostrarProdutos() {
+        System.out.println(produtos);
+    }
 }
 
