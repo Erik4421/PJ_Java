@@ -21,5 +21,15 @@ public class ArmazemLoja {
     public void mostrarProdutos() {
         System.out.println(produtos);
     }
+
+    public void alterarQuantidade(int idProduto, int quantidade) {
+        List<Object> produto = produtos.get(idProduto);
+
+        int quantidadeAtual = (int) produto.get(2);
+        int novaQuantidade = quantidadeAtual - quantidade;
+
+        produto.set(2, novaQuantidade);
+        produtos.set(idProduto, produto);
+    }
 }
 

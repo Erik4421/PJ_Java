@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Admin extends Usuario{
     Loja loja;
     ArmazemLoja armazemLoja;

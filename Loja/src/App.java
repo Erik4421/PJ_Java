@@ -4,6 +4,7 @@ public class App {
         Admin admin = new Admin(armazemLoja);
         Loja loja = new Loja(armazemLoja);
         Cliente cliente = new Cliente();
+        loja.setCliente(cliente);
         
 
         admin.adicionarProduto("Maça", 2, 100);
@@ -11,6 +12,10 @@ public class App {
         admin.adicionarProduto("Uva", 0.5, 100);
         admin.adicionarProduto("Limão", 0.75, 100);
 
-        loja.exibirProdutos();    
+        loja.exibirProdutos();  
+        cliente.comprarProduto(1, 10);
+        loja.venderProduto();
+        loja.exibirProdutos(); 
+        System.out.println("Saldo da loja: " + loja.getSaldo());
     }
 }

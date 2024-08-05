@@ -1,8 +1,16 @@
 public class Cliente extends Usuario{
-    ArmazemLoja armazemLoja;
-    Loja loja = new Loja(armazemLoja);
+    Loja loja;  
+    private int idProduto, quantidade;
 
-    void comprar() {
-        
+    void comprarProduto(int idProduto, int quantidade) {
+        this.idProduto = idProduto;
+        this.quantidade = quantidade;
+    }
+
+    public int getIdProduto() {
+        return idProduto;
+    }
+    public int getQuantidade() {
+        return quantidade;
     }
 }
